@@ -41,12 +41,6 @@
   <!-- Main -->
 
   <main>
-    <!-- Slides -->
-    <section id="slides">
-      <img src="" alt="Slide 1" id="img1">
-      <img src="images/slide2.jpg" alt="Slide 2">
-      <img src="images/slide3.jpg" alt="Slide 3">
-    </section>
     <!-- Principais atrações -->
     <section id="home">
       <h2>PACOTES</h2>
@@ -93,15 +87,31 @@
   <!-- ___________________________________________________________________ -->
   <!-- Rodapé -->
 
-  <footer>
+  <!-- <footer>
     <p>Copyright &copy; 2023 Parque Aquático</p>
     <div class="redes-sociais">
       <a href="#">Facebook</a>
       <a href="#">Twitter</a>
       <a href="#">Instagram</a>
     </div>
-  </footer>
-
+  </footer> -->
+  <footer>
+    <div class="rodape2">
+        <h1>Fale Conosco:</h1>
+        <a href="https://web.whatsapp.com/" style="text-decoration: none" 
+        target="_blank">
+            <img src="whatsapp.png" class="redes">
+        </a>
+        <a href="https://www.instagram.com/amicaozaofc/" style="text-decoration: none" target="_blank">
+            <img src="instagram.png" class="redes">
+        </a>
+        <a href="https://www.facebook.com/" style="text-decoration: none" 
+        target="_blank">   
+            <img src="facebook.png" class="redes">
+        </a>
+    </div>
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
 </body>
 <!-- Estilização -->
 <style>
@@ -244,5 +254,41 @@ z-index: 10;
     margin-left: auto; 
     border-radius: 20px 0px 0px 20px; 
   }
+
+  footer{
+  position:absolute;
+  margin: 0px;
+  bottom: -2850px;  /*sempre deixar do mesmo tamanho do height body da pagina porem negativo (-) */
+  width: 100%;
+  height: 210px;
+  background-color: #84a513;
+  color: white;
+  justify-content: space-between;
+  /* border: 10px solid transparent; */
+
+}
+.rodape2{
+    float:left;
+    margin-left: 110px;
+    margin-right: 0px;
+    align-content: center;
+    position: relative;
+    top: 25px;
+}
+
+.mapa{
+    position: relative;
+    bottom: -5px;
+    float: right ;
+    margin-right: 30px;
+    border-radius: 20px;
+    
+}
+
+.redes{
+  margin: 10px;
+  width: 40px;
+}
+
   </style>
 </html>
