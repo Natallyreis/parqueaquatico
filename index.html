@@ -21,7 +21,7 @@
     <div class="barra">
         <img src="" width="65" height="65" class="logo" >
         </a>
-        <ul>
+        <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Atrações</a></li>
             <li><a href="#">Sobre</a></li>
@@ -109,8 +109,7 @@
   align-items: center;
   border: 8px solid transparent;
   }
-  
-  ul li{
+  .navbar li{
   float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
   position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
   border-radius: 25px;
@@ -123,7 +122,7 @@
   text-align: center;
   }
   
-  ul li a{
+  .navbar li a{
   display: flex; /* Renderiza o elemento HTML como bloco, tal como os parágrafos e os cabeçalhos o são */
   padding: 8px;
   text-decoration:dashed;
@@ -133,7 +132,7 @@
   justify-content: center;
   }
   
-  ul li ul{
+  .navbar ul li ul{
   display:none;
   position:absolute;
   top: 34px;
