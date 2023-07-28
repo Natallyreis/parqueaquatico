@@ -22,8 +22,8 @@
         <img src="Novo Projeto (25).png" width="85" height="85" class="logo" >
         </a>
         <ul class="navbar">
-            <li><strong><a href="#">HOME</a></strong></li>
-            <li><strong><a href="#">ATRAÇÕES</a></strong></li>
+            <li><strong><a href="#home">HOME</a></strong></li>
+            <li><strong><a href="#atracoes">ATRAÇÕES</a></strong></li>
             <li><strong><a href="#">SOBRE</a></strong></li>
             <li><strong><a href="#">CONTATO</a></strong></li>
         </ul>
@@ -104,6 +104,15 @@
 </body>
 <!-- Estilização -->
 <style>
+  *, *::after, *::before {
+    box-sizing: border-box;
+    scroll-padding-top: 10px; /* Permite uma distância quando se clica Nav a*/
+}
+
+html {
+    scroll-behavior: smooth; /* Permite transição suave quando se clica Nav a*/
+   
+}
   body{
   margin: 0%;
   height: auto;
@@ -112,7 +121,7 @@
   .barra{
   width: auto;
   top: 0;
-  height: 50px;
+  height: 70px;
   display:flex;
   justify-content:space-around;
   background-color: rgba(252, 169, 4, 1);
