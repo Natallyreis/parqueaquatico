@@ -18,21 +18,19 @@
   <!-- Cabeçalho -->
 
   <header>
-    <img src="images/logo.png" alt="Logo do Parque Aquático">
-    <h1>Parque Aquático</h1>
-    <!-- Links -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="atracoes.html">Atrações</a>
-      <a href="contato.html">Formulário de contato</a>
-      <a href="sobre.html">Sobre</a>
-    </nav>
-    <!-- Barra de pesquisa -->
-    <div class="pesquisa">
-      <input type="text" placeholder="Pesquisar...">
-      <button type="submit">Pesquisar</button>
+    <div class="barra">
+        <img src="" width="65" height="65" class="logo" >
+        </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Atrações</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a>
+        </ul>
+        </a>
     </div>
-  </header>
+</header>
+
 
   <!-- ___________________________________________________________________ -->
   <!-- Main -->
@@ -93,4 +91,55 @@
   </footer>
 
 </body>
+
+<style>
+  body{
+  margin: 0%;
+  height: auto;
+  }
+  
+  .barra{
+  width: auto;
+  top: 0;
+  height: 50px;
+  display:flex;
+  justify-content:space-around;
+  background-color: #a7cfee;
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+  border: 8px solid transparent;
+  }
+  
+  ul li{
+  float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
+  position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
+  border-radius: 25px;
+  display:flex;
+  /* display:inline-table; */
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 116px;
+  font-weight: 400;
+  text-align: center;
+  }
+  
+  ul li a{
+  display: flex; /* Renderiza o elemento HTML como bloco, tal como os parágrafos e os cabeçalhos o são */
+  padding: 8px;
+  text-decoration:dashed;
+  color: #ffffff;
+  width: 110px;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  ul li ul{
+  display:none;
+  position:absolute;
+  top: 34px;
+  left: -45px;
+  text-align: center;
+  width: 110px;
+  }
+  </style>
 </html>
