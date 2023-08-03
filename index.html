@@ -387,7 +387,139 @@ z-index: 10;
     background-color: #ff9900;
     transition: width 0.3s;
     }
+.junto{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(0%);
+  transition: all 1.5s;
+}
 
-        
+.img1{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1s;
+}
+
+.img2{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1s;
+}
+
+.img3{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1s;
+}
+.img4{
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 1s;
+}
+.show1{
+  opacity: 1;
+  transform: translateY(-30%);
+  transition: all 2s;
+}
+.show2{
+  opacity: 1;
+  transform: translateY(-30%);
+  transition: all 2s;
+}
+
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
   </style>
+  <script>
+
+    const myObserver = new IntersectionObserver((entries) => {
+      entries.forEach( (entry) => {
+
+        if(entry.isIntersecting){
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+
+    })
+
+  
+    const elements = document.querySelectorAll('.junto')
+    
+    elements.forEach((element) => myObserver.observe(element))
+  
+//outro
+    const myObserver1 = new IntersectionObserver((entries) => {
+      entries.forEach( (entry) => {
+
+        if(entry.isIntersecting){
+          entry.target.classList.add('show1')
+        } else {
+          entry.target.classList.remove('show1')
+        }
+      })
+
+    })
+    const elements1 = document.querySelectorAll('.img1')
+    
+    elements1.forEach((element1) => myObserver1.observe(element1))
+
+  //outro1
+
+
+  const myObserver2 = new IntersectionObserver((entries) => {
+      entries.forEach( (entry) => {
+
+        if(entry.isIntersecting){
+          entry.target.classList.add('show1')
+        } else {
+          entry.target.classList.remove('show1')
+        }
+      })
+
+    })
+    const elements2 = document.querySelectorAll('.img2')
+    
+    elements2.forEach((element2) => myObserver2.observe(element2))
+//img3
+
+const myObserver3 = new IntersectionObserver((entries) => {
+      entries.forEach( (entry) => {
+
+        if(entry.isIntersecting){
+          entry.target.classList.add('show1')
+        } else {
+          entry.target.classList.remove('show1')
+        }
+      })
+
+    })
+    const elements3 = document.querySelectorAll('.img3')
+    
+    elements3.forEach((element3) => myObserver3.observe(element3))
+
+  //img4
+
+  const myObserver4 = new IntersectionObserver((entries) => {
+      entries.forEach( (entry) => {
+
+        if(entry.isIntersecting){
+          entry.target.classList.add('show2')
+        } else {
+          entry.target.classList.remove('show2')
+        }
+      })
+
+    })
+    const elements4 = document.querySelectorAll('.img4')
+    
+    elements4.forEach((element4) => myObserver4.observe(element4))
+
+  </script>
 </html>
