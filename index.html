@@ -500,6 +500,266 @@ z-index: 10;
   width: 1.3em;
   fill: #b4b4b4;
 }
+@media screen and (max-width: 768px) {
+  body{
+  margin: 0%;
+  height: auto;
+  }
+
+  header{
+height: 50px;
+width: auto;
+position: fixed;
+left: 0px;
+right: 0px;
+top: 0px;
+z-index: 10;
+}
+  .barra{
+  position: fixed;
+  width: 45.5%;
+  top: 0;
+  height: 200px;
+  display:flex;
+  justify-content:space-around;
+  background-color: rgba(252, 169, 4, 1);
+  font-family: 'Inter', sans-serif;
+  align-items: center;
+  border: 8px solid transparent;
+  }
+  .navbar li{
+  float:left; /* posicona a propriedade CSS que usamos na tela, seja um elemento em bloco ou em linha */
+  position: relative;/* Posiciona o item filho ao lado da LI qdo item pai */
+  border-radius: 25px;
+  display:flex;
+  /* display:inline-table; */
+  margin-right: 0%;
+  margin-left: 0%;
+  width: 110px;
+  font-weight: 400;
+  text-align: center;
+  }
+  .fotologo{
+  background-image: url(https://www.servidoresdehortolandia.com.br/uploads/images/2022/01/thermas-water-park-sao-pedro-fbc32.png);
+  height: 80vh;
+  background-attachment: fixed;
+  width: 73%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  height: 100%;
+  width: 99.5%;
+  margin-top: 38px;
+  background: #0386BAb6;
+}
+.container img{
+  width: 75%;
+  margin-left: 0%;
+  margin-top: 45%;
+}
+.pct1{
+    width: 10px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 15px;
+    margin-left: 0px;
+
+  }
+.pct1 img{
+  width: 250px;
+  border-radius: 15px;
+  margin-left: 0px;
+}
+.pct2 img{
+  width: 250px;
+  border-radius: 15px;
+margin-left: 0;
+}
+.pct3 img{
+  width: 250px;
+  border-radius: 15px;
+}
+.pct1:hover{
+   transform: translateY(-15px);
+   box-shadow: #000000 0px 7px 12px;
+
+  }
+
+  .pct2{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(0, 60, 255);
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .pct2:hover{
+   transform: translateY(-15px);
+   box-shadow: #000000 0px 7px 12px;
+  }
+  .pct3{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(255, 0, 106);
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  .pct3:hover{
+   transform: translateY(-15px);
+   box-shadow: #000000 0px 7px 12px;
+  }
+  .junto{
+    display: block;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .jtbanners .img1{
+    width: 200px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 0px 20px 20px 0px; 
+    }
+  .jtbanners .img1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 20px 20px 0px; 
+    }
+  .jtbanners .img2{
+    width: 200px;
+    height: 300px;
+    margin-top: 0px;
+    margin-left: 0%; 
+    border-radius: 20px 0px 0px 20px; 
+  }
+  .jtbanners .img2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 0px 0px 20px; 
+    margin-left: 38%;
+    }
+  .jtbanners .img3{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 0px 20px 20px 0px; 
+  }
+  .jtbanners .img3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 0px 20px 20px 0px; 
+    }
+  .jtbanners .img4{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 150px;
+    margin-top: 0px;
+    margin-left: auto; 
+    border-radius: 20px 0px 0px 20px; 
+  }
+  .jtbanners .img4 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 12%;
+    border-radius: 20px 0px 0px 20px; 
+    }
+    footer{
+    position:absolute;
+    margin: 0px;
+    bottom: -3800px;  /*sempre deixar do mesmo tamanho do height body da pagina porem negativo (-) */
+    width: 73%;
+    height: 400px;
+    background-color: #84a513;
+    color: white;
+    justify-content: space-between;
+/* border: 10px solid transparent; */
+    }
+  .rodape2{
+    margin-left: 40px;
+    margin-right: 0px;
+    align-content: center;
+    position: relative;
+    top: 25px;
+    }
+
+  .mapa{
+    position: relative;
+    bottom: -5px;
+    float: right;
+    margin-right: 30px;
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 80px;
+    }
+
+  .redes{
+    margin: 10px;
+    width: 40px;
+    }
+
+
+  h1 {
+    margin-top: 0;
+    }
+
+  h2 {
+    color: #ff9900;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 72.5%;
+    }
+
+  #funcionamento, .ingressos, .numeros {
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+  #funcionamento p, .ingressos p {
+    margin: 5px 0;
+    }
+
+  .numeros ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+  .numeros li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+  .numeros li span {
+    flex: 1;
+    }
+
+  .chart {
+    width: 200px;
+    height: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    margin-left: 10px;
+    overflow: hidden;
+    }
+
+  .bar {
+    height: 100%;
+    background-color: #ff9900;
+    transition: width 0.3s;
+    }
+
+
+}
   </style>
   <script>
 
