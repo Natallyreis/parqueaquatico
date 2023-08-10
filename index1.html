@@ -42,7 +42,17 @@
         </a>
     </div>
 </header>
-<form>
+<form id="login">
+  <h1>CADASTRO</h1>
+<input id="nome" type="text" required placeholder="Email">
+<br>
+<br>
+<input id="senha" type="password" required placeholder="Senha">
+<br>
+<br>
+<input id="submit" type="submit" value="Enviar"></a>
+</form>
+<form id="cadastro">
   <h1>LOGIN</h1>
 <input id="nome" type="text" required placeholder="Nome">
 <br>
@@ -50,7 +60,7 @@
 <input id="senha" type="password" required placeholder="Senha">
 <br>
 <br>
-<a href="telarecuperacao.html">><h3>Esqueci minha senha</h3></a>
+<a href="telarecuperacao.html"><h3>Esqueci minha senha</h3></a>
 <input id="submit" type="submit" value="Enviar"></a>
 </form>
   <footer id="footer">
@@ -122,7 +132,7 @@ input{
     height: 60px;
     width: 190px;
     border-radius: 10px;
-    background-color: rgb(67, 64, 69);
+    background-color: white;
     color: white;
     border: 0;
     padding: 0px 10px;
@@ -131,24 +141,36 @@ input{
     height: 60px;
     width: 190px;
     border-radius: 10px;
-    background-color:rgb(67, 64, 69);
+    background-color:white;
     border: 0;
     padding: 0px 10px;
     color: white;
 }
-form{
-    background-color: rgb(21, 27, 23);
+#login{
+    background-color: #0386BAb6;
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     padding: 60px 80px;
     border-style: solid;
-    border-color: rgb(35, 81, 4);
+    border-color: #0386BAb6;
     border-width: 2px;
     border-radius: 20px;
 }
-
+#cadastro{
+    background-color: #0386BAb6;
+    position: absolute;
+    top: 60%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    padding: 60px 80px;
+    border-style: solid;
+    border-color:#0386BAb6;
+    border-width: 2px;
+    border-radius: 20px;
+    height: 440px;
+}
 form h1{
     text-align: center;
     color: white;
